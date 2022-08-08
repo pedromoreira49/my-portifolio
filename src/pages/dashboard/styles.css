@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22212C;
+}
+
+h1, h2, h3, p{
+    color: #837E9F;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.info-profile{
+    width: 30%;
+    height: 85vh;
+    display: block;
+    padding: 15px;
+}
+
+.profile{
+    width: 100%;
+    height: 40vh;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 15px;
+    background: #302F3D;
+}
+
+.profile img{
+    width: 80%;
+    height: 25vh;
+    margin: 10px 30px 10px 30px;
+    border-radius: 50%;
+    border: 3px solid green
+}
+
+.profile h2{
+    margin: 0px 50px 0px 65px;
+}
+
+.profile p{
+    margin: 10px 20px 20px 20px;
+}
+
+.social{
+    width: 100%;
+    height: 40vh;
+    margin-top: 15px;
+    padding: 10px;
+    background: #302F3D;
+    border-radius: 15px;
+}
+
+.social h2{
+    margin: 10px 20px 20px 20px;
+}
+
+.social ul{
+    margin: 10px 30px 20px 40px;
+    font-size: 18px;
+}
+
+.social li{
+    list-style: none;
+    margin: 8px 0px;
+}
+
+.social svg{
+    margin: 10px 10px -6px 0px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #837E9F;
+}
+
+.info-projects{
+    width: 70%;
+    height: 95vh;
+    padding: 23px 10px;
+}
+
+.container-projects{
+    width: 100%;
+    max-height: 70vh;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 5px;
+    padding: 15px;
+    background: #302F3D;
+}
+
+.card-project{
+    max-height: 20vh;
+    border: 1px solid #837E9F;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 8px;
+}
+
+.card-project svg{
+    margin: 10px 10px -6px 0px;
+}
+
+.card-project p{
+    margin: 8px;
+}
