@@ -1,0 +1,27 @@
+.repo-list{
+    width: 100%;
+    max-height: 360vh;
+}
+
+.repo-info{
+    border: 1px solid #837E9F;;
+    margin: 10px;
+    padding: 10px;
+}
+
+.repo-info li{
+    display: flex;
+}
+
+.repo-info svg{
+    margin: 0px 5px -3px 0px;
+    width: 10%;
+}
+
+.repo-info h2{
+    width: 50%;
+}
+
+.repo-info p{
+    width: 20%;
+}
