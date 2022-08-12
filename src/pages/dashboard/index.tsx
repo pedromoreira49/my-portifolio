@@ -1,34 +1,32 @@
-import React, {useEffect, useState} from "react";
-import {AiFillGithub, AiFillTwitterCircle, AiFillLinkedin, AiFillFacebook, AiFillRedditCircle, AiFillInstagram, AiFillFolderOpen} from 'react-icons/ai';
+import {useEffect, useState} from "react";
+import {AiFillGithub, AiFillTwitterCircle, AiFillLinkedin, AiFillFacebook, AiFillRedditCircle, AiFillInstagram} from 'react-icons/ai';
+import { GoGear } from 'react-icons/go';
 
 import { api } from "../../services/api";
 
 import './styles.css';
 
+import { ListRepos } from "../../components/ListRepos";
+import { CardRepos } from "../../components/CardRepos";
+import { Config } from "../../components/Config";
+
 export function Dashboard(){
 
     const [info, setInfo] = useState([]);
-    const [repos, setRepos] = useState([]);
-
-    useEffect(() => {
-        api.get('users/pedromoreira49/repos').then(response => {
-            setRepos(response.data);
-            console.log(response.data);
-        })
-    }, []);
 
     useEffect(() => {
         api.get('users/pedromoreira49').then(response => {
             setInfo(response.data);
             console.log(response.data);
-        });
-    }, [])
-
+        })
+    }, []);
     return(
         <div className="main-container">
             <div className="info-profile">
                 <div className="profile">
-                    <img src={info.avatar_url}/>
+                    <div className="myImg">
+                        <img src={info.avatar_url}/>
+                    </div>
                     <h2>{info.name}</h2>
                     <p>{info.bio}</p>
                 </div>
@@ -46,17 +44,17 @@ export function Dashboard(){
             </div>
             <div className="info-projects">
                 <div className="container-projects">
-                    {
-                        repos.slice(0,6).map(repo => (
-                            <div className="card-project">
-                                <h2><AiFillFolderOpen />{repo.name}</h2>
-                                <p>{repo.description}</p>
-                                <div className="language">
-                                    <p>{repo.language}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
+                    <div className="header-repo">
+                        <div className="title-repo">
+                            <h2>Repositories:</h2>
+                        </div>
+                        <div className="config-repo">
+                            <Config />
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </div>
