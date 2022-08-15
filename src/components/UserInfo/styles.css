@@ -1,0 +1,70 @@
+.info-profile{
+    width: 30%;
+    max-height: 80vh;
+    display: block;
+    padding: 15px;
+}
+
+.profile{
+    width: 100%;
+    padding: 20px;
+    max-height: 100vh;
+    margin-top: 8px;
+    background-color: blue;
+    border-radius: 15px;
+    background: #302f3d;
+}
+
+.profile .myImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.myImg img{
+    max-width: 100%;
+    max-height: 25vh;
+    border-radius: 50%;
+    border: 3px solid green
+}
+
+.profile h2{
+    margin: 0px 50px 0px 65px;
+}
+
+.profile p{
+    margin: 10px 20px 20px 20px;
+}
+
+.social{
+    width: 100%;
+    max-height: 100vh;
+    margin: 15px 0px 15px 0px;
+    padding: 10px;
+    background: #302F3D;
+    border-radius: 15px;
+}
+
+.social h2{
+    margin: 10px 20px 20px 20px;
+}
+
+.social ul{
+    margin: 10px 30px 20px 40px;
+    font-size: 18px;
+}
+
+.social li{
+    list-style: none;
+    margin: 8px 0px;
+}
+
+.social svg{
+    margin: 10px 10px -6px 0px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #837E9F;
+}
